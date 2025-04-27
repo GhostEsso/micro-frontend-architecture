@@ -49,4 +49,4 @@ Cette architecture permet:
 - Une meilleure séparation des préoccupations
 - Le développement indépendant des équipes
 - L'optimisation des performances avec le chargement à la demande
-- La sécurité par la gestion des permissions au niveau du chargement
+- La sécurité par la gestion des permissions au niveau du chargement 
