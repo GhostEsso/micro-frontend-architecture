@@ -1,0 +1,23 @@
+{
+  "name": "micro-frontend-architecture",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "shell",
+    "user-app",
+    "finance-app"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm run start:shell\" \"npm run start:user\" \"npm run start:finance\"",
+    "start:shell": "cd shell && npm start",
+    "start:user": "cd user-app && npm start",
+    "start:finance": "cd finance-app && npm start",
+    "build": "npm run build:shell && npm run build:user && npm run build:finance",
+    "build:shell": "cd shell && npm run build",
+    "build:user": "cd user-app && npm run build",
+    "build:finance": "cd finance-app && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
